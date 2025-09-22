@@ -7,3 +7,11 @@
 | **Q-C-R (Quorum, Consistency, Replicas)** | - W = write quorum, R = read quorum, N = total replicas <br> - **Rule:** W + R > N ensures read sees latest write <br> - Tune W/R based on latency vs consistency                                       | - “Explain CAP trade-offs” <br> - “Example: Cassandra write W=2, read R=2, N=3 → always overlap → strong consistency” <br> - “Also explain eventual consistency if W+R ≤ N” |
 | **TVC (Tombstone, Vector Clock, CRDT)**   | - Conflict resolution methods in **multi-leader / leaderless systems** <br> - Tombstone → deleted markers <br> - Vector Clock → track version history <br> - CRDT → mergeable, conflict-free data types | - “Explain multi-version concurrency” <br> - “Example: Dynamo uses vector clocks, Riak CRDTs” <br> - “Useful when multiple writes occur concurrently”                       |
 | **LS (Local / Remote placement)**         | - Local replicas → **low latency reads/writes** <br> - Remote replicas → **disaster recovery / geo-redundancy** <br> - Hybrid strategies balance latency vs durability                                  | - “Design replica placement for SLOs” <br> - “Example: 2 local + 1 cross-region replica in Cassandra” <br> - “Mention tradeoff: cross-region writes increase latency”       |
+
+
+RCCT framework for storage
+
+replication - Salam ( sync, async, Leaderless, multi-leder, )
+COnsistency  - strong, eventual, QUorum
+COnfict handling  - TVC 
+Trade off LAD( durability vs availabity vs latency
