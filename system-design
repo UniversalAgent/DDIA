@@ -1,0 +1,121 @@
+📌 Interview Flow (60 mins)
+
+Structure your thoughts
+
+Use zoom setup, clarity, diagramming.
+
+Lead the discussion → don’t wait for interviewer to push.
+
+Be vocal, keep explaining reasoning.
+
+Framework to follow → 4 STEPS
+
+STEP 1: Requirements & Clarifications
+
+Ask questions (functional + non-functional)
+
+Data size, traffic, latency, durability, constraints.
+
+Clarify scale → “How many requests/sec? How many users?”
+
+State assumptions clearly.
+
+Consider multiple approaches → explain pros/cons, trade-offs.
+
+Take buy-in explicitly: “Does this make sense before I proceed?”
+
+STEP 2: API Design & Data Modeling
+
+Define APIs (REST vs GraphQL).
+
+Handle pagination, rate limiting, auth/authz.
+
+Model SQL vs NoSQL trade-offs.
+
+Discuss sharding, caching, indexing strategies.
+
+For DynamoDB → GSI (Global Secondary Indexes).
+
+STEP 3: Component Design
+
+Move from HLD → LLD.
+
+Components: DB, cache, queues, LB, microservices.
+
+Identify bottlenecks & failure points.
+
+Think: “What happens under high traffic or partial failure?”
+
+Horizontal scaling → partitioning, caching, CDN.
+
+Observability → metrics (API p99 latency, error rate, service health).
+
+Monitoring strategy: show that you’ll build self-healing / alerting.
+
+STEP 4: Scaling & Trade-offs
+
+Scenarios:
+
+Global users (multi-region replication).
+
+Scale up/down, DB growth, cost vs performance.
+
+Security → auth, rate limits, model-based access.
+
+Always close with trade-offs: latency vs durability vs cost vs complexity.
+
+
+
+STEP 1: Requirements & Clarifications → R (Ready)
+
+👉 Be Ready before you design
+
+Requirements (functional + non-functional)
+
+Scale (req/sec, users)
+
+Assumptions
+
+Multiple approaches + trade-offs
+
+Buy-in from interviewer
+
+STEP 2: API Design & Data Modeling → A (API)
+
+👉 Define API early
+
+REST vs GraphQL
+
+Pagination, rate limiting, auth
+
+SQL vs NoSQL trade-offs
+
+Sharding, caching, indexing
+
+DynamoDB GSI if NoSQL
+
+STEP 3: Component Design → C (Components)
+
+👉 Draw the boxes
+
+HLD → LLD
+
+DB, cache, queues, LB, microservices
+
+Bottlenecks, failure points
+
+Horizontal scale (partition, cache, CDN)
+
+Observability, monitoring, self-healing
+
+STEP 4: Scaling & Trade-offs → S (Scale)
+
+👉 Show you can Scale
+
+Multi-region replication
+
+Scale up/down, DB growth
+
+Security, auth, access models
+
+Explicit trade-offs (latency vs durability vs cost vs complexity)
