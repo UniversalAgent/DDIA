@@ -1,0 +1,73 @@
+Full Mnemonic Map
+Step 1 → Requirements & Clarifications
+
+Mnemonic: CLEAR
+
+Clarify functional & non-functional (latency, durability).
+
+Load & scale (req/sec, DAU).
+
+Estimate data size & growth.
+
+Assumptions explicit.
+
+Review & get buy-in.
+
+👉 Remember: “CLEAR requirements first.”
+
+Step 2 → API & Data Modeling
+
+Mnemonic: PRISM
+
+Pagination
+
+Rate limiting
+
+Indexing/sharding choice
+
+SQL vs NoSQL trade-offs
+
+Modeling (entities, relations, GSIs)
+
+👉 Remember: “APIs are a PRISM to see the data model.”
+
+Step 3 → Component Design
+
+Mnemonic: BOXFOM
+
+Bottlenecks
+
+Observability (metrics, logging, tracing)
+
+X (Cross failures → think partial outages)
+
+Failure points (graceful degradation)
+
+On-demand scaling (horizontal partitioning, CDN, cache)
+
+Microservices/components (DB, queue, LB, workers)
+
+👉 Remember: “Box the system into components with FOM (failure, observability, microservices).”
+
+Step 4 → Scaling & Trade-offs
+
+Mnemonic: LAST
+
+Latency vs throughput trade-offs
+
+Availability vs durability vs consistency (CAP)
+
+Security (auth, rate limits)
+
+Trade-offs wrap-up (cost vs complexity vs scale)
+
+👉 Remember: “Always discuss the LAST trade-offs.”
+
+✅ Combined Flow Mnemonic
+
+Top-level: R-A-C-S → Real Architects Craft Systems
+
+Inside: CLEAR → PRISM → BOXFOM → LAST
+
+So in interview, your brain runs like this:
+👉 R (CLEAR) → A (PRISM) → C (BOXFOM) → S (LAST).
